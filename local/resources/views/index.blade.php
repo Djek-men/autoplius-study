@@ -1,4 +1,3 @@
-<?php
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,45 +9,42 @@
         <link href='{{asset("media/css/style.css")}}' rel="stylesheet" type="text/css">
     </head>
     <body>
+	<div class="container">
+
         <div id='header'>
-		</div>
-		<nav class='menu-top'>
-		<a href='#'>Главная</a>
-		<a href='#'>Новости</a>
-		<a href='#'>Контакты</a>
-		</nav>
-
-		<div class='container'>
-		<div class='col-md-3'>меню
-		<a href='#'class="btn btn-success btn-block">Главная</a>
-		<a href='#'class="btn btn-success btn-block">Новости</a>
-		<a href='#'class="btn btn-success btn-block">Контакты</a>
-		</div>
-		<div class='col-md-6'> Добро пожаловать на сайт </div>
-		<div class='col-md-3'>
-
-				<table width="100%" height="180" style="background-color:#f2f2f2; border: #cccccc 1px solid; font-family:Tahoma; font-size:12px; color:#000000;" cellpadding="2" cellspacing="0">
-				<tr><td>
-				</td></tr>
-				<tr><td>
-
-				<table width=100% height=100% style="background-color:#f2f2f2; font-family:Tahoma; font-size:12px; color:#000000;" cellpadding="0" cellspacing="0">
-				<tr><td>
-				<script type="text/javascript" charset="windows-1251" src="http://pogoda.by/meteoinformer/js/26850_3.js"></script>
-				</td></tr>
-				</table>
-
-				</td></tr>
-
-				<tr><td align="right">
-				</td></tr>
-				</table>
-
+				<div id="banner" class="border">
+				</div>
+				<div id="header-small" class="border col-md-8">
+				</div>
 		</div>
 
-		<div style='clear:both'></div>
-        <div id='footer' class='container footer'>
 
+
+		<div id="banners" class="banners col-md-4 border">
+			<div id="right-banner1" class="border  right-banner">
+			</div>
+
+			<div id="right-banner2" class="border  right-banner">
+			</div>
+
+			<div id="right-banner3" class="border  right-banner">
+			</div>
 		</div>
+
+
+		<div id="content" class='border col-md-8'>
+		</div>
+
+
+
+		<div id='footer' class="border col-md-8">
+		</div>
+
+
+
+	</div>
+
+
+
     </body>
 </html>
