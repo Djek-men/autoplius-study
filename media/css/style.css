@@ -1,10 +1,61 @@
+.header-line
+{
+    position: relative;
+    padding: 5px 15px 5px;
+    overflow: hidden;
+    background-color: white;
+    height: auto;
+    width: 100%;
+}
+#header-middle
+{
+    padding: 3px 15px;
+}
+
+.btn-small
+{
+    padding: 1px 15px;
+    color: #0074B7;
+}
+
+.logo
+{
+    margin-right: 20px;
+    float: left;
+    background-image: url("media/img/logo.jpg");
+}
+
+.portal
+{
+    border-left: 1px solid rgb(224, 224, 224);
+    padding-left: 17px;
+    font: 20px Georgia,sans-serif;
+}
+
+.fr
+{
+    float: right !important;
+}
+.fl
+{
+    float: left !important;
+}
+
+.divBlue
+{
+    background: url("/media/img/sprite-auto.gif");
+}
+
+
+
 .border
 {
-    border: solid black 2px;
+    border: solid black 1px;
 }
 
 body
 {
+    background-color: #d4d4d4;
     position: relative;
 }
 
@@ -17,9 +68,11 @@ body
 
 #header-small
 {
-    height: 50px;
+    height: auto;
     margin-top: 2px;
     margin-bottom: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .right-banner
