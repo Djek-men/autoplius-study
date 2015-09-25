@@ -1,45 +1,94 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Laravel</title>
+<head>
+    <meta charset='utf-8'>
+    <title>Autoplius.by</title>
+    <meta name='description' content='auto'>
+    <meta name='keywords' content='auto'>
+    <link href='{{asset("media/bootstrap/css/bootstrap.min.css")}}' rel="stylesheet" type="text/css">
+    <link href='{{asset("media/css/style.css")}}' rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+    <div id='header'>
+        <div id="banner" class="border">
 
-        <style>
-            html, body {
-                height: 100%;
-            }
+        </div>
+        <div id="header-small" class="border col-md-8">
+            <div>
 
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
+                <div id="header-top" class="header-line">
+                    <a href="#" class="logo"><img src="media/img/logo.gif" /></a>
+                    <span class="portal">Портал транспортных объявлений</span>
 
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
+                    <div class="btn-group fr">
+                        <button class="btn">Logo 1</button>
+                        <button class="btn">Logo 2</button>
+                    </div>
+                </div>
 
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
+                <div class="clear"></div>
 
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
+                <nav>
+
+                    <div id="header-middle" class="header-line divBlue">
+
+                        <div class="btn-group">
+                            <button class="btn  btn-small"><strong>Б/У Авто</strong></button>
+                            <button class="btn  btn-small"><strong>Новые авто</strong></button>
+                        </div>
+
+
+                        <div class="btn-group fr">
+                            <button class="btn  btn-small"><strong>Войти</strong></button>
+                            <button class="btn  btn-small"><strong>Зарегистрироваться</strong></button>
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div id="header-bottom" class="header-line">
+                        <div class="btn-group">
+                            <button class="btn btn-small"><strong>Детальный поиск</strong></button>
+                            <button class="btn btn-small"><strong>Мой поиск</strong></button>
+                            <button class="btn btn-small"><strong>Мои заметки</strong></button>
+                        </div>
+                    </div>
+                </nav>
+
             </div>
         </div>
-    </body>
+    </div>
+
+
+
+    <div id="banners" class="banners col-md-4 border">
+        <div id="right-banner1" class="border  right-banner">
+        </div>
+
+        <div id="right-banner2" class="border  right-banner">
+        </div>
+
+        <div id="right-banner3" class="border  right-banner">
+        </div>
+    </div>
+
+
+    <div id="content" class='border col-md-8'>
+        @yield('content')
+    </div>
+
+
+
+    <div id='footer' class="border col-md-8">
+    </div>
+
+
+
+</div>
+
+
+
+</body>
 </html>
