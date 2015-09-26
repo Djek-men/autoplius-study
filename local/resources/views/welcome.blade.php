@@ -11,7 +11,7 @@
 <body>
 <div class="container">
 
-    <div id='header'>
+
         <div id="banner" class="border">
 
         </div>
@@ -59,7 +59,7 @@
 
             </div>
         </div>
-    </div>
+
 
 
 
@@ -77,6 +77,7 @@
 
     <div id="content" class='border col-md-8'>
         @yield('content')
+        сюда вставляем контент
     </div>
 
 

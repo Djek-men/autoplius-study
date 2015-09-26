@@ -223,10 +223,21 @@ ul
     padding: 4px;
     height: auto;
 }
+#right-banner1
+{
+    background-image: url("/media/img/right_bannet_1.jpg");
+}
+
+#right-banner2
+{
+    background-image: url("/media/img/right_bannet_2.jpg");
+}
 
 
-
-
+#right-banner3
+{
+    background-image: url("/media/img/right_bannet_3.jpg");
+}
 
 
 
