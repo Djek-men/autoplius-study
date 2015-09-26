@@ -95,15 +95,16 @@ body
 
 #footer
 {
+    background-color: gray;
     margin-top: 5px;
-    height: 60px;
-
-
+    min-height: 100px;
 }
 
 #content
 {
-    height: 500px;
+    height: 100%;
+    min-height: 600px;
+    background-color: whitesmoke;
 }
 
 .banners
@@ -185,7 +186,7 @@ ul
 
 .border
 {
-    border: solid black 1px;
+    border: solid black 0px;
 }
 .clear
 {
