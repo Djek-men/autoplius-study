@@ -27,6 +27,8 @@
             <div id="content" class='col-md-8' style="padding-left: 0px; padding-right: 0px">
 
             @yield('content')
+                {{$metas['title']}} <br>
+                <h1>{{$metas['name']}}</h1>
 
             </div>
 

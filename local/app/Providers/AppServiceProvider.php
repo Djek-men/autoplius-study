@@ -13,7 +13,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $metas = \Config::get('myConfig.metas');
+        view()->share('metas',$metas);
     }
 
     /**

@@ -15,3 +15,11 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('base',function(){
+    return view('templates.base_template');
+});
+
+Route::get('/env', function() {
+    return App::environment();
+});
+

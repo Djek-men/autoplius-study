@@ -2,11 +2,7 @@
 <!--Begin content-->
 
 		@section('content')
-
-
-
-
-			<div class="main border">
+	<div class="main border">
 
 				<div class="border main_top">
 
@@ -125,10 +121,7 @@
 
 				</div>
 
-
-
 			</div>
-
 
 <!---End content-->
 		@endsection
