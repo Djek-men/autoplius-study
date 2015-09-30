@@ -96,8 +96,11 @@ body
 #footer
 {
     background-color: gray;
-    margin-top: 5px;
+    margin:5px 0px;
     min-height: 100px;
+    width: 100%;
+    float: left;
+    position: relative;
 }
 
 #content
@@ -184,10 +187,6 @@ ul
     height: auto;
 }
 
-.border
-{
-    border: solid black 0px;
-}
 .clear
 {
     clear: both;
@@ -200,7 +199,7 @@ ul
 .container_left
 {
     float: left;
-    width: 420px;
+    width: 415px;
     padding: 7px;
 }
 .container_right
@@ -221,7 +220,6 @@ ul
 }
 .main_top
 {
-    padding: 4px;
     height: auto;
 }
 #right-banner1
@@ -240,7 +238,12 @@ ul
     background-image: url("/media/img/right_bannet_3.jpg");
 }
 
+button:hover
+{
+   background: #BCD6F1;
+   color: whitesmoke;
 
+}
 
 
 
