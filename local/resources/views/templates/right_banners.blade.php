@@ -1,6 +1,6 @@
 
 
-<div id="banners" class="banners col-md-4 border">
+<div id="banners">
     <div id="right-banner1" class="border  right-banner">
     </div>
 

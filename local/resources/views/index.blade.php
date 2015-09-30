@@ -1,4 +1,4 @@
-@extends('templates.base_template')
+@extends('main_base')
 <!--Begin content-->
 
 		@section('content')
@@ -85,7 +85,7 @@
 
 						<div class="fr fast-search-nav">
 							<a href="#" class="fr"><span class="border btn_find glyphicon glyphicon-search">Найти</span></a>
-							<a href="#" class="link_detail"><span class="border">Детальный поиск</span></a>
+							<a href="global_find" class="link_detail"><span class="border">Детальный поиск</span></a>
 						</div>
 
 						<div class="clear"></div>

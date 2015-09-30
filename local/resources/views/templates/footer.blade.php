@@ -1,4 +1,2 @@
-
-
-<div id='footer' class="border col-md-8"> </div>
+<div id='footer'> </div>
 
