@@ -15,25 +15,30 @@
 
             @include('templates.top_banner')
 
+            <div class='col-lg-8' style="padding-left: 0px; padding-right: 0px">
 
-            @include('templates.header_menu')
+                @include('templates.header_menu')
 
+                <!--Begin content-->
 
-            @include('templates.right_banners')
+                <div id="content" class="border" >
 
+                    @yield('content')
 
-            <!--Begin content-->
-
-            <div id="content" class='col-md-8' style="padding-left: 0px; padding-right: 0px">
-
-            @yield('content')
-
+                </div>
+                <!--End content-->
             </div>
 
-            <!---End content-->
+
+            <div class="col-lg-4">
+            @include('templates.right_banners')
+            </div>
 
 
-            @include('templates.footer')
+            <div class="col-lg-8">
+                @include('templates.footer')
+            </div>
+
 
 
         </div>

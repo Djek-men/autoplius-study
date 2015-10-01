@@ -6,7 +6,7 @@
         @include('templates.header_menu')
 
         <div id="content">
-
+            @yield('content')
         </div>
 
         @include('templates.footer')
