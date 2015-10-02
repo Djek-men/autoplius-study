@@ -21,6 +21,11 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function()
     {echo"Добро пожаловать,Админ";});
 });
 
+Route::get('cabinet',function(){
+    $temp='Данные пользователя, переданные через переменную в роуте';
+    return view('templates.cabinet',['content'=>$temp]);
+});
+
 Route::get('/{id?}','mainController@index');
 
 

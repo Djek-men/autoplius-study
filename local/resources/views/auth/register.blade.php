@@ -9,7 +9,7 @@
                 {!!csrf_field()!!}
                 <div class="form-group">
                     <label for="name">Ваше имя</label>
-                    <input type="name" class="form-control" id="name" placeholder="name" name="name" value="{{old('name')}}">
+                    <input type="name" class="form-control" id="name" placeholder="name" name="name">
                 </div>
                 <div class="form-group">
                     <label for="email">Email-адрес</label>
