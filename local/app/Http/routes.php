@@ -15,15 +15,9 @@ Route::post('auth/login',['uses'=>'Auth\AuthController@postLogin']);
 
 Route::get('auth/logout',['as'=>'logout','uses'=>'Auth\AuthController@getLogout']);
 
-Route::group(['prefix'=>'admin','middleware'=>'auth'],function()
+Route::group(['middleware'=>'auth'],function()
 {
-    Route::get('/',function()
-    {echo"Добро пожаловать,Админ";});
-});
-
-Route::get('cabinet',function(){
-    $temp='Данные пользователя, переданные через переменную в роуте';
-    return view('templates.cabinet',['content'=>$temp]);
+    Route::controller('cabinet','Cabinet');
 });
 
 Route::get('/{id?}','mainController@index');
