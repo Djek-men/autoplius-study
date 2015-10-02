@@ -23,11 +23,17 @@
 									<a href="{{asset('new_auto')}}"><button class="btn  btn-small"><strong>Новые авто</strong></button></a>
 								</div>
 
-
+								@if (Auth::check())
+									<div class="btn-group fr">
+										<a href="#"><button class="btn  btn-small"><strong>Личный кабинет</strong></button></>
+										<a href="#"><button class="btn  btn-small"><strong>Выйти</strong></button></a>
+									</div>
+									@else
 								<div class="btn-group fr">
-									<a href="{{asset('login')}}"><button class="btn  btn-small"><strong>Войти</strong></button></>
-									<a href="{{asset('register')}}"><button class="btn  btn-small"><strong>Зарегистрироваться</strong></button></a>
+									<a href="{{asset('auth/login')}}"><button class="btn  btn-small"><strong>Войти</strong></button></>
+									<a href="{{asset('auth/register')}}"><button class="btn  btn-small"><strong>Зарегистрироваться</strong></button></a>
 								</div>
+									@endif
 							</div>
 
 							<div class="clear"></div>
@@ -36,7 +42,7 @@
 								<div class="btn-group">
 									<a href="{{asset('global_find')}}"> <button class="btn btn-small"><strong>Детальный поиск</strong></button></a>
 									<a href="{{asset('my_find')}}"> <button class="btn btn-small"><strong>Мой поиск</strong></button></a>
-									<a href="{{asset('my_notes')}}"> <button class="btn btn-small"><strong>Мои заметки</strong></button></a>
+									<a href="{{asset('notes')}}"> <button class="btn btn-small"><strong>Мои заметки</strong></button></a>
 								</div>
 							</div>
 						</nav>

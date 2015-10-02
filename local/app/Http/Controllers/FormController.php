@@ -1,4 +1,0 @@
-class FormController extends BaseController
-{
-
-}

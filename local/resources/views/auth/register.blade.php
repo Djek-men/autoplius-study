@@ -9,24 +9,19 @@
                 {!!csrf_field()!!}
                 <div class="form-group">
                     <label for="name">Ваше имя</label>
-                    <input type="name" class="form-control" id="name" placeholder="name">
+                    <input type="name" class="form-control" id="name" placeholder="name" name="name" value="{{old('name')}}">
                 </div>
                 <div class="form-group">
                     <label for="email">Email-адрес</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email">
+                    <input type="email" class="form-control" id="email" placeholder="Email" name="email">
                 </div>
                 <div class="form-group">
                     <label for="password">Введите пароль</label>
-                    <input type="password" class="form-control" id="password" placeholder="Password">
+                    <input type="password" class="form-control" id="password" placeholder="Password" name="password">
                 </div>
                 <div class="form-group">
                     <label for="password2">Повторите пароль</label>
-                    <input type="password" class="form-control" id="password2" placeholder="Password">
-                </div>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox"> Запомнить
-                    </label>
+                    <input type="password" class="form-control" id="password2" placeholder="Password" name="password_confirmation">
                 </div>
                 <button type="submit" class="btn btn-default">Регистрация</button>
             </form>

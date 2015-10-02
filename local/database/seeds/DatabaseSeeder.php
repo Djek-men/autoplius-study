@@ -31,21 +31,24 @@ class pagesTableSeeder extends Seeder
 
         $pages= array(
             array('url'=>'contacts',
-                'content'=>'Здесь содержатся контактные данные'),
+                'content'=>'Здесь содержатся контактные данные +123456789'),
             array('url'=>'global_find',
-                'content'=>'Развернутый поиск авто'),
-            array('url'=>'registration',
-                'content'=>'Добро пожаловать')
+                'content'=>'Развернутый поиск авто')
         );
 
         DB::table('pages')->insert($pages); // вставляем массив
 
-        Page::create(['url'=>'main',
-            'content'=>'Главная']);
+
         Page::create(['url'=>'new_auto',
             'content'=>'Новые авто под заказ']);
         Page::create(['url'=>'about_us',
             'content'=>'Страничка о нас']);
+        Page::create(['url'=>'used_auto',
+            'content'=>'Б\У авто']);
+        Page::create(['url'=>'my_find',
+            'content'=>'Мой поиск']);
+        Page::create(['url'=>'notes',
+            'content'=>'Заметки. Сюда будут добавлены машины, помеченные пользователем, как отслеживаемые']);
 
     }
 };

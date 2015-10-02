@@ -7,6 +7,7 @@
 
         <div id="content">
             @yield('content')
+            {{$content}}
         </div>
 
         @include('templates.footer')
