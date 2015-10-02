@@ -12,7 +12,7 @@ class CreateGoodsTable extends Migration
      */
     public function up()
     {
-        Schema::create('good', function (Blueprint $table) {
+        Schema::create('goods', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->text('text');

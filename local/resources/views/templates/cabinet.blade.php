@@ -11,20 +11,25 @@
   </div>
   
   <div class="form-group">
-    <label for="description">Описане</label>
-    <textarea  class="form-control" name="description"></textarea>
+    <label for="body">Описане</label>
+    <textarea  class="form-control" name="body"></textarea>
   </div>
   
   <div class="form-group">
-    <label for="price">Цена</label>
-    <input type="text" class="form-control"  name="price">
+    <label for="cat_id">Категория</label>
+    <input type="text" class="form-control"  name="cat_id">
   </div>
+  
   <div class="form-group">
-    <label for="image">Изображение</label>
-    <input type="file" class="form-control" name="image">
+    <label for="picture">Изображение</label>
+    <input type="file" class="form-control" name="picture">
   </div>
    
   <button type="submit" class="btn btn-default">Добавить</button>
   </form>
+  @foreach($goods as $good)
+  <li>{{$good->name}}</li>
   </div>
+  @endforeach
+  <p align
 @stop
