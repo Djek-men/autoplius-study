@@ -15,9 +15,11 @@ Route::post('auth/login',['uses'=>'Auth\AuthController@postLogin']);
 
 Route::get('auth/logout',['as'=>'logout','uses'=>'Auth\AuthController@getLogout']);
 
+
+
 Route::group(['middleware'=>'auth'],function()
 {
-    Route::controller('cabinet','Cabinet');
+    Route::controller('cabinet','CarsController');
 });
 
 Route::get('/{id?}','mainController@index');

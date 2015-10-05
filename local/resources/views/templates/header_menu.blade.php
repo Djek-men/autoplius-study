@@ -24,8 +24,9 @@
 								</div>
 
 								@if (Auth::check())
-									{{Auth::user()->name}}
+									
 									<div class="btn-group fr">
+									<strong>{{Auth::user()->name}}</strong>
 										<a href="{{asset('cabinet')}}"><button class="btn  btn-small"><strong>Личный кабинет</strong></button></>
 										<a href="{{asset('auth/logout')}}"><button class="btn  btn-small"><strong>Выйти</strong></button></a>
 									</div>

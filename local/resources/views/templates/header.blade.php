@@ -5,7 +5,9 @@
     <title>Autoplius.by</title>
     <meta name='description' content='auto'>
     <meta name='keywords' content='auto'>
+	@section('scripts')
     <link href='{{asset("media/bootstrap/css/bootstrap.min.css")}}' rel="stylesheet" type="text/css">
     <link href='{{asset("media/css/style.css")}}' rel="stylesheet" type="text/css">
+	@show
 </head>
 <body>

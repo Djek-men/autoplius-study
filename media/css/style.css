@@ -243,7 +243,11 @@ button:hover
    color: whitesmoke;
 
 }
-
+.cabinet
+{
+	margin:0 auto;
+	width:600px;
+}
 
 
 

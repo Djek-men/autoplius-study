@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
         Model::unguard();
 
         $this->call('pagesTableSeeder');
+		$this->call('CarsSeed');
 
         Model::reguard();
     }
