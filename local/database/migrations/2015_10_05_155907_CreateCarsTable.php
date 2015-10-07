@@ -21,6 +21,7 @@ class CreateCarsTable extends Migration
             $table->string('photo_path');
             $table->integer('price');
             $table->timestamps();
+            $table->string('picture');
         });
 
     }

@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Car;
 use Auth;
 use App\Http\Requests\CarRequest;
+use Input;
 
 
 class CarsController extends Controller
@@ -31,8 +32,11 @@ class CarsController extends Controller
 	
     public function postIndex(CarRequest $req)
 	{
-		
+		$directory='/media/img/'.Auth::user()->id.'/';
+		$pic = \App::make('\App\Libs\Img')->url(Input::file('picture1'),$directory);
+		if($pic)($req['picture']=$pic);
 		$req['user_id'] = Auth::user()->id;
+
 		Car::create($req->except('_token'));
 		return redirect('cabinet');
 		

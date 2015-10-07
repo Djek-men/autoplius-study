@@ -26,7 +26,10 @@
     <label for="price">Цена</label>
     <input type="text" class="form-control"  name="price">
   </div>
-       
+      <div class="form-group">
+        <label for="picture1">Картинка</label>
+        <input type="file"  class="form-control" name="picture1"></input>
+      </div>
   <button type="submit" class="btn btn-default">Добавить</button>
   </form>
   
