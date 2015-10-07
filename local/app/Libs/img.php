@@ -7,15 +7,11 @@ class Img
     {
 
     }
-    public function test()
-    {
-        echo "test";
-    }
+
     public function url($path=null,$directory='/media/img/temp/',$name='')
     {
         if($path!=null)
         {
-
             $dir=$_SERVER['DOCUMENT_ROOT'].$directory;
             if(!is_dir($dir))
             {@mkdir($dir,0777);
