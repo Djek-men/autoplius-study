@@ -7,7 +7,7 @@ return array(
     'filters' => array("id","name","email"),
     'edit_fields' => array(
         'email'=>array('title'=>'E-mail','type'=>'text'),
-        'name'=>array('name'=>'Name','type'=>'text')
+        'name'=>array('title'=>'Name','type'=>'text')
         )
 );
 

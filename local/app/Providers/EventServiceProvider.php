@@ -4,7 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
-
+use App\Car;
+use Auth;
 class EventServiceProvider extends ServiceProvider
 {
     /**
@@ -28,6 +29,16 @@ class EventServiceProvider extends ServiceProvider
     {
         parent::boot($events);
 
-        //
+
+        Car::saving(function($cars)
+        {
+            //dd($cars);
+            $cars['user_id'] = Auth::user()->id;
+        });
+        Car::deleting(function($item)
+        {
+            if (file_exists('media/img/'.$item->picture))
+            unlink('media/img/'.$item->picture);
+        });
     }
 }

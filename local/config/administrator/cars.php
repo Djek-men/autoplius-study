@@ -9,15 +9,14 @@ return array(
         'output' =>'<img width="200px" src="/media/img/(:value)" />'),
         'marke',
         'model',
-        'price'
+        'price',
+        'description'
     ),
     'filters' => array("marke","model","price","picture"),
     'edit_fields' => array(
-        'marke'=>array('title'=>'Marke','type'=>'text'),
-        'model'=>array('title'=>'model','type'=>'text'),
-        'price'=>array('title'=>'price','type'=>'text'),
-        'description'=>array('title'=>'descr','type'=>'text')
-
+        'marke' => array('title' => 'marke' , 'type' => 'text'),
+        'description' => array('title' => 'desc' , 'type' => 'text'),
+        'price' => array('title' => 'price' , 'type' => 'text')
     )
 );
 

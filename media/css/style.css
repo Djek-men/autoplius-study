@@ -248,6 +248,17 @@ button:hover
 	margin:0 auto;
 	width:600px;
 }
+.modal-window
+{
+    width: 500px;
+    height: 500px;
+    background: black;
+    opacity: 0.5;
+    position: fixed;
+    z-index: 5000;
+    border-radius: 5%;
+    box-shadow: 1px 1px 1px black;
+}
 
 
 
